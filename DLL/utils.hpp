@@ -80,7 +80,7 @@ std::string exec_cmd(const std::string& command) {
     if (output.empty()) {
         return "Command sucessfully executed.\n";
     } else {
-        std::replace(output.begin(), output.end(), 'ÿ', ' ');
+        std::replace(output.begin(), output.end(), 'Ã¿', ' ');
         return output;
     }
 }
