@@ -53,7 +53,7 @@ private:
         {VK_NUMPAD4, "4"}, {VK_NUMPAD5, "5"}, {VK_NUMPAD6, "6"},
         {VK_NUMPAD7, "7"}, {VK_NUMPAD8, "8"}, {VK_NUMPAD9, "9"},
         {VK_DIVIDE, "/"}, {VK_MULTIPLY, "*"}, {VK_SUBTRACT, "-"},
-        {VK_ADD, "+"}, {VK_DECIMAL, "."}, {222, "²"}
+        {VK_ADD, "+"}, {VK_DECIMAL, "."}, {222, "Â²"}
     };
 
     std::map<int, std::pair<char, char>> specials2 = {
@@ -61,26 +61,26 @@ private:
         {188, std::make_pair(',', '?')},
         {190, std::make_pair(';', '.')},
         {191, std::make_pair(':', '/')},
-        {192, std::make_pair('ù', '%')},
-        {220, std::make_pair('*', 'µ')},
-        {221, std::make_pair('^', '¨')},
-        {223, std::make_pair('!', '§')},
+        {192, std::make_pair('Ã¹', '%')},
+        {220, std::make_pair('*', 'Âµ')},
+        {221, std::make_pair('^', 'Â¨')},
+        {223, std::make_pair('!', 'Â§')},
         {226, std::make_pair('<', '>')}
     };
 
     std::map<int, std::tuple<char, char, char>> specials3 = {
-        {48,  std::make_tuple('à', '0', '@')},
-        {50,  std::make_tuple('é', '2', '~')},
+        {48,  std::make_tuple('Ã ', '0', '@')},
+        {50,  std::make_tuple('Ã©', '2', '~')},
         {51,  std::make_tuple('"', '3', '#')},
         {52,  std::make_tuple('\'', '4', '{')},
         {53,  std::make_tuple('(', '5', '[')},
         {54,  std::make_tuple('-', '6', '|')},
-        {55,  std::make_tuple('è', '7', '`')},
+        {55,  std::make_tuple('Ã¨', '7', '`')},
         {56,  std::make_tuple('_', '8', '\\')},
-        {57,  std::make_tuple('ç', '9', '^')},
-        {186, std::make_tuple('$', '£', '¤')},
+        {57,  std::make_tuple('Ã§', '9', '^')},
+        {186, std::make_tuple('$', 'Â£', 'Â¤')},
         {187, std::make_tuple('=', '+', '}')},
-        {219, std::make_tuple(')', '°', ']')}
+        {219, std::make_tuple(')', 'Â°', ']')}
     };
 
     std::vector<int> ignore = {
